@@ -10,14 +10,13 @@ Welcome to the official repository for the Panther App website. This repository 
 ## Table of Contents
 
 - [React App Website](#react-app-website)
-  - [Official Panther App Website](#official-panther-app-website)
-    - [A Green Panther Brand Production](#a-green-panther-brand-production)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [License](#license)
+- [Official Panther App Website](#official-panther-app-website)
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Introduction
 
