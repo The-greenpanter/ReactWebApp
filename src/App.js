@@ -1,12 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Resources/Header';
 import Body from './Resources/Body';
 import './porta.css'
 
 
 function App() {
   return (
-   <Body />
+  <><Header /><Body /></>
   );
 }
 
