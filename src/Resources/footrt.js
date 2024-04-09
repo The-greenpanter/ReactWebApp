@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import propTypes from 'React.PropTypes';
 
 const footrt = (props) => {
     const handleSubmit = (event) => {
@@ -37,14 +37,14 @@ const footrt = (props) => {
   )
 }
 
-footrt.propTypes = {
-  initialValues: React.PropTypes.shape({
-    nombre: React.PropTypes.string,
-    correo: React.PropTypes.string,
-    Mensaje: React.PropTypes.string,
+footrt.protoTypes  = {
+  initialValues: React.propTypes.shape({
+    nombre: React.propTypes.string,
+    correo: React.propTypes.string,
+    Mensaje: React.propTypes.string,
   }),
-  onSubmit: React.PropTypes.func.isRequired,
-  errors: React.PropTypes.object,
+  onSubmit: React.propTypes.func.isRequired,
+  errors: React.propTypes.object,
 };
 
 export default footrt
