@@ -1,50 +1,45 @@
-import React from 'react'
-import propTypes from 'React.PropTypes';
+import React, { useState }  from 'react'
+import PropTypes from 'prop-types';
+import FinalSection from './finalSection';
 
-const footrt = (props) => {
-    const handleSubmit = (event) => {
-      event.preventDefault(); // Prevent default form submission
-      const formData = new FormData(event.target);
-      const nombre = formData.get('nombre');
-      const correo = formData.get('correo');
-      const mensaje = formData.get('Mensaje');
-  
-      // Do something with the values (e.g., call props.onSubmit or store them in state)
-      props.onSubmit({ nombre, correo, mensaje });
-    };
-  return (
+const Footrt = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault(); // Prevent default form submission
+
+    // Process form data (e.g., call props.onSubmit or store them in state)
+    console.log({ name, email, message }); // Example processing
+  };
+return (
   <footer>
     <section class="contacto">
-        <div class="container">
-            <h3 class="titulo" id="contacto">Contacto</h3>
-            <form class="formulario" onSubmit={handleSubmit}>
-                <input class="InsertNombre" type="text" placeholder="Nombre" name="nombre" required></input>
-                <input class="InsertCorreo" type="email" placeholder="Correo" name="correo" required></input>
-                <textarea name="Mensaje" placeholder="Mensaje" required></textarea>
-                <input class="boton" type="sumit" value="Enviar"></input>
+          <div class="container">
+            <h3 class="titulo" id="contacto">Contact</h3>
+            <form class="formulario" onSubmit={handleFormSubmit}>
+              <input class="InsertNombre" type="text" placeholder="Name" name="name" required value={name} onChange={(e) => setName(e.target.value)} />
+              <input class="InsertCorreo" type="email" placeholder="Email" name="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+              <textarea name="Mensaje" placeholder="Message" required value={message} onChange={(e) => setMessage(e.target.value)} />
+              <input class="boton" type="submit" value="Send" />
             </form>
-        </div>
+          </div>
+        <FinalSection/> 
     </section>  
-    <section class="social-media">
-        <div class="container">
-            <a href="https://www.instagram.com/the.green_panter/" class="IG"><i class="fa-brands fa-instagram"></i></a>
-            <a href="" class="FB"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://github.com/The-greenpanter" class="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/juan-diego-peña-castillo-932396138/" class="Linkin"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-    </section>
+   
   </footer>
   )
 }
 
-footrt.protoTypes  = {
-  initialValues: React.propTypes.shape({
-    nombre: React.propTypes.string,
-    correo: React.propTypes.string,
-    Mensaje: React.propTypes.string,
+Footrt.protoTypes  = {
+  initialValues: PropTypes.shape({
+    nombre: PropTypes.string,
+    correo: PropTypes.string,
+    Mensaje: PropTypes.string,
   }),
-  onSubmit: React.propTypes.func.isRequired,
-  errors: React.propTypes.object,
+  onSubmit: PropTypes.func.isRequired,
+  errors: PropTypes.object,
 };
 
-export default footrt
+export default Footrt
