@@ -1,28 +1,32 @@
 import React, { useState }  from 'react'
 import PropTypes from 'prop-types';
 import FinalSection from './finalSection';
+import {useForm} from "react-hook-form";
+
+type FormFields = {
+  name: string;
+  email: string;
+};
+
 
 const Footrt = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  
+  const { register,handleFormSubmit} = useForm<FormFields>(FormFields);
 
-  const handleFormSubmit = (event) => {
-    event.preventDefault(); // Prevent default form submission
+  const onSubmit: SubmitHandeler<FormFields> = (data) =>{
+    console.log(data)
+  }
 
-    // Process form data (e.g., call props.onSubmit or store them in state)
-    console.log({ name, email, message }); // Example processing
-  };
 return (
   <footer>
     <section class="contacto">
           <div class="container">
             <h3 class="titulo" id="contacto">Contact</h3>
-            <form class="formulario" onSubmit={handleFormSubmit}>
-              <input class="InsertNombre" type="text" placeholder="Name" name="name" required value={name} onChange={(e) => setName(e.target.value)} />
-              <input class="InsertCorreo" type="email" placeholder="Email" name="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
-              <textarea name="Mensaje" placeholder="Message" required value={message} onChange={(e) => setMessage(e.target.value)} />
-              <input class="boton" type="submit" value="Send" onClick={handleFormSubmit}/>
+            <form class="formulario" onSubmit={handleFormSubmit(onSubmit)}>
+              <input class="InsertNombre" type="text" placeholder="Name" name="Name" {...register("Name")} />
+              <input class="InsertCorreo" type="email" placeholder="Email" name="email" {...register("email")} />
+              <textarea name="Mensaje" placeholder="Message"  />
+              <input class="boton" type="submit" value="Send" {...register("Message")}/>
             </form>
           </div>
         <FinalSection/> 
@@ -32,14 +36,14 @@ return (
   )
 }
 
-Footrt.protoTypes  = {
-  initialValues: PropTypes.shape({
-    nombre: PropTypes.string.required,
-    correo: PropTypes.string.required,
-    Mensaje: PropTypes.string.required,
-  }),
-  onSubmit: PropTypes.func.isRequired,
-  errors: PropTypes.object,
-};
+// Footrt.protoTypes  = {
+//   initialValues: PropTypes.shape({
+//     nombre: PropTypes.string.required,
+//     correo: PropTypes.string.required,
+//     Mensaje: PropTypes.string.required,
+//   }),
+//   onSubmit: PropTypes.func.isRequired,
+//   errors: PropTypes.object,
+// };
 
 export default Footrt
