@@ -22,7 +22,7 @@ return (
               <input class="InsertNombre" type="text" placeholder="Name" name="name" required value={name} onChange={(e) => setName(e.target.value)} />
               <input class="InsertCorreo" type="email" placeholder="Email" name="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
               <textarea name="Mensaje" placeholder="Message" required value={message} onChange={(e) => setMessage(e.target.value)} />
-              <input class="boton" type="submit" value="Send" />
+              <input class="boton" type="submit" value="Send" onClick={handleFormSubmit}/>
             </form>
           </div>
         <FinalSection/> 
@@ -34,9 +34,9 @@ return (
 
 Footrt.protoTypes  = {
   initialValues: PropTypes.shape({
-    nombre: PropTypes.string,
-    correo: PropTypes.string,
-    Mensaje: PropTypes.string,
+    nombre: PropTypes.string.required,
+    correo: PropTypes.string.required,
+    Mensaje: PropTypes.string.required,
   }),
   onSubmit: PropTypes.func.isRequired,
   errors: PropTypes.object,
