@@ -1,12 +1,10 @@
 "use strict";
 exports.__esModule = true;
+exports.Body = void 0;
 var react_1 = require("react");
 var react_router_dom_1 = require("react-router-dom");
 var music_tsx_1 = require("../Music/music.tsx");
-var Body = function () {
-    react_1["default"].createElement(react_router_dom_1.BrowserRouter, null,
-        react_1["default"].createElement(react_router_dom_1.Routes, null,
-            react_1["default"].createElement(react_router_dom_1.Route, { path: "../Music/", element: react_1["default"].createElement(music_tsx_1["default"], null) })));
+exports.Body = function () {
     return (react_1["default"].createElement("section", { className: "main" },
         react_1["default"].createElement("section", { className: "Acercade", id: "generalInfo" },
             react_1["default"].createElement("div", { className: "container" },
@@ -30,7 +28,10 @@ var Body = function () {
                 react_1["default"].createElement("div", { className: "trabanos" },
                     react_1["default"].createElement("div", { className: "work" },
                         react_1["default"].createElement("div", { className: "thumb" },
-                            react_1["default"].createElement(react_router_dom_1.Link, { to: "/music", className: "link" },
+                            react_1["default"].createElement(react_router_dom_1.BrowserRouter, null,
+                                react_1["default"].createElement(react_router_dom_1.Routes, null,
+                                    react_1["default"].createElement(react_router_dom_1.Route, { path: "../Music/", element: react_1["default"].createElement(music_tsx_1["default"], null) }))),
+                            react_1["default"].createElement("link", { to: "/music", className: "link" },
                                 react_1["default"].createElement("img", { src: "img/music.png", alt: "", className: "Iuno" }),
                                 react_1["default"].createElement("div", { className: "descripcion" },
                                     react_1["default"].createElement("p", { className: "smalltittle" }, "Produccion musica"),
@@ -72,4 +73,3 @@ var Body = function () {
                                     react_1["default"].createElement("p", { className: "smalltittle" }, "Title of work"),
                                     react_1["default"].createElement("p", { className: "smalldescription" }, "Tools and ideas main"))))))))));
 };
-exports["default"] = Body;

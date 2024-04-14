@@ -1,6 +1,12 @@
 import React from 'react'
-
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Music from '../Music/music.tsx'
 const Body = () => {
+    <Router>
+    <Routes>
+    <Route path="../Music/" element={<Music/>} />
+    </Routes>
+</Router>
   return (
     <section className="main">
         <section className="Acercade" id="generalInfo">
@@ -20,18 +26,18 @@ const Body = () => {
                     Trabajos
                 </h3>     
                 <div className="trabanos">
-                    <dib className="work">
+                    <div className="work">
                         <div className="thumb">
-                         <a href="#/Music/PrimerLayoutplusCss.html" className="link">
+                        <Link to="/music" className="link">
                             <img src="img/music.png" alt="" className="Iuno"></img>
                                 <div className="descripcion">
                                     <p className="smalltittle">Produccion musica</p>
                                     <p className="smalldescription">Grabacion, edicion y composicion</p>
                                 </div>   
-                         </a>
+                        </Link>
                         </div>
-                    </dib>
-                    <dib className="work">
+                    </div>
+                    <div className="work">
                         <div className="thumb">
                             <a href="#" className="link">
                                 <a href="#/Articuloflexbox/" className="link">
@@ -43,8 +49,8 @@ const Body = () => {
                                 </a>
                             </a>   
                         </div>
-                    </dib>
-                    <dib className="work">
+                    </div>
+                    <div className="work">
                         <div className="thumb">
                             <a href="#../src/Practicjquery/index.html" className="link">
                                 <img src="img/Disenho.png" alt="" className="Iuno"></img>
@@ -54,8 +60,8 @@ const Body = () => {
                                 </div>                    
                             </a> 
                         </div>
-                    </dib>
-                    <dib className="work">     
+                    </div>
+                    <div className="work">     
                         <div className="thumb">
                             <a href="#/TemaParawordpress/index.html" className="link">
                                 <img src="img/PSX_20220321_084354(1).png" alt="" className="Iuno"></img>
@@ -65,8 +71,8 @@ const Body = () => {
                                 </div>
                             </a>   
                         </div>
-                    </dib>
-                    <dib className="work">     
+                    </div>
+                    <div className="work">     
                         <div className="thumb">
                             <a href="#" className="link">
                                 <img src="img/sun.png" alt="" className="Iuno"></img>
@@ -77,8 +83,8 @@ const Body = () => {
                             </a>   
 
                         </div>
-                </dib>
-                    <dib className="work">
+                </div>
+                    <div className="work">
                         <div className="thumb">
                             <a href="#/target" className="link">
                                 <img src="img/Travel.png" alt="" className="Iuno"></img>
@@ -88,7 +94,7 @@ const Body = () => {
                                 </div>
                             </a>   
                         </div>
-                    </dib>
+                    </div>
                 </div>     
             </div>
         </section>

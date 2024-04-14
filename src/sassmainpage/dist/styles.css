@@ -143,38 +143,35 @@ header .titlecontainer .texto .descripcion {
   margin-bottom: 40px;
   text-align: center;
 }
-.main .trabajos .trabanos .work .thumb a {
-  text-decoration: none;
-}
-.main .trabajos .trabanos .work .thumb a img {
+.main .trabajos .trabanos .work .thumb img {
   object-fit: cover;
   vertical-align: top;
   max-width: 100%;
   border-radius: 3px;
 }
-.main .trabajos .trabanos .work .thumb a img:hover {
+.main .trabajos .trabanos .work .thumb img:hover {
   box-shadow: 0 0 4px 2px #415AA6;
 }
-.main .trabajos .trabanos .work .thumb a p {
+.main .trabajos .trabanos .work .thumb p {
   font-size: 16px;
   color: #000;
   font-family: "Vollkorn", sans-serif;
   font-weight: 400;
 }
-.main .trabajos .trabanos .work .thumb a .descripcion {
+.main .trabajos .trabanos .work .thumb .descripcion {
   text-align: center;
   font-family: "Vollkorn";
 }
-.main .trabajos .trabanos .work .thumb a .descripcion:hover {
+.main .trabajos .trabanos .work .thumb .descripcion:hover {
   text-decoration: underline;
   color: #000100;
 }
-.main .trabajos .trabanos .work .thumb a .descripcion .smalltittle {
+.main .trabajos .trabanos .work .thumb .descripcion:hover .smalltittle {
   font-weight: 200;
   color: #373CA6;
   margin-bottom: 10px;
 }
-.main .trabajos .trabanos .work .thumb a .descripcion .smalldescription {
+.main .trabajos .trabanos .work .thumb .descripcion:hover .smalldescription {
   font-size: 14px;
 }
 
