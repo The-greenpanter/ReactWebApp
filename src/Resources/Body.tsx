@@ -2,11 +2,6 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Music from '../Music/music.tsx'
 const Body = () => {
-    <Router>
-    <Routes>
-    <Route path="../Music/" element={<Music/>} />
-    </Routes>
-</Router>
   return (
     <section className="main">
         <section className="Acercade" id="generalInfo">
@@ -28,13 +23,18 @@ const Body = () => {
                 <div className="trabanos">
                     <div className="work">
                         <div className="thumb">
-                        <Link to="/music" className="link">
-                            <img src="img/music.png" alt="" className="Iuno"></img>
-                                <div className="descripcion">
-                                    <p className="smalltittle">Produccion musica</p>
-                                    <p className="smalldescription">Grabacion, edicion y composicion</p>
-                                </div>   
-                        </Link>
+                        <Router>
+                                <Routes>
+                                <Route path="../Music/" element={<Music/>} />
+                                </Routes>
+                            <Link to="../Music/music.tsx'" className="link">
+                                <img src="img/music.png" alt="" className="Iuno"></img>
+                                    <div className="descripcion">
+                                        <p className="smalltittle">Produccion musica</p>
+                                        <p className="smalldescription">Grabacion, edicion y composicion</p>
+                                    </div>   
+                            </Link>
+                            </Router>
                         </div>
                     </div>
                     <div className="work">
