@@ -39,15 +39,15 @@ return (
             <form className="formulario" onSubmit={handleSubmit(onSubmit)}>
               <input className="InsertNombre" type="text" placeholder="Name" {...register("name")} />
               {errors.name && (
-                    <div className="text-red-500">{errors.name.message}</div>
+                    <div className="error-message">{errors.name.message}</div>
                   )}
               <input className="InsertCorreo" type="email" placeholder="Email" {...register("email")} />
                   {errors.email && (
-                    <div className="text-red-500">{errors.email.message}</div>
+                    <div className="error-message">{errors.email.message}</div>
                   )}
               <textarea placeholder="Message"  {...register("mensaje")}/>
               {errors.mensaje && (
-                    <div className="text-red-500">{errors.mensaje.message}</div>
+                    <div className="error-message">{errors.mensaje.message}</div>
                   )}
               <input className="boton" type="submit" value="Send" />
             </form>

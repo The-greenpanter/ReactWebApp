@@ -88,11 +88,11 @@ var Footrt = function () {
                 react_1["default"].createElement("h3", { className: "titulo", id: "contacto" }, "Contact"),
                 react_1["default"].createElement("form", { className: "formulario", onSubmit: handleSubmit(onSubmit) },
                     react_1["default"].createElement("input", __assign({ className: "InsertNombre", type: "text", placeholder: "Name" }, register("name"))),
-                    errors.name && (react_1["default"].createElement("div", { className: "text-red-500" }, errors.name.message)),
+                    errors.name && (react_1["default"].createElement("div", { className: "error-message" }, errors.name.message)),
                     react_1["default"].createElement("input", __assign({ className: "InsertCorreo", type: "email", placeholder: "Email" }, register("email"))),
-                    errors.email && (react_1["default"].createElement("div", { className: "text-red-500" }, errors.email.message)),
+                    errors.email && (react_1["default"].createElement("div", { className: "error-message" }, errors.email.message)),
                     react_1["default"].createElement("textarea", __assign({ placeholder: "Message" }, register("mensaje"))),
-                    errors.mensaje && (react_1["default"].createElement("div", { className: "text-red-500" }, errors.mensaje.message)),
+                    errors.mensaje && (react_1["default"].createElement("div", { className: "error-message" }, errors.mensaje.message)),
                     react_1["default"].createElement("input", { className: "boton", type: "submit", value: "Send" }))),
             react_1["default"].createElement(finalSection_1["default"], null))));
 };

@@ -206,12 +206,22 @@ footer .contacto .container .formulario .InsertCorreo {
   height: 3em;
   text-align: justify;
   display: space-between;
+  margin-left: 1px;
   border: 2px solid #373CA6;
   border-radius: 5px;
+  align-content: center;
+  flex: auto;
 }
 footer .contacto .container .formulario .InsertNombre:focus,
 footer .contacto .container .formulario .InsertCorreo:focus {
   border: 2px solid #F27507;
+}
+footer .contacto .container .formulario .error-message {
+  color: #f20707;
+  width: 47%;
+  height: 3em;
+  width: 100%;
+  text-align: left;
 }
 footer .contacto .container .formulario textarea {
   border: 2px solid #373CA6;
