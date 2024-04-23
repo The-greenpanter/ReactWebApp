@@ -1,6 +1,16 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import Music from '../Music/music.tsx'
+import {
+    createBrowserRouter,
+    RouterProvider,
+  } from "react-router-dom";
+  import Music from '../Music/music.tsx'
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Music/>,
+    },
+  ]);
 const Body = () => {
   return (
     <section className="main">
