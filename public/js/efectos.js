@@ -2,7 +2,7 @@ $(document).ready(function(){
     //Efecto menu
     $('.menu a').each(function(index,elemento){
         $(this).css({
-            'top':'-200px'
+            top:'-200px'
         });
         $(this).animate({
             top:'0'

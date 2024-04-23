@@ -21,20 +21,13 @@ const Body = () => {
                 </h3>     
                 <div className="trabanos">
                     <div className="work">
-                        {/* <div className="thumb">
-                        <Router>
-                                <Routes>
-                                <Route path="../Music/" element={<Music/>} />
-                                </Routes>
-                            <Link to="../Music/music.tsx'" className="link">
+                        <div className="thumb">
                                 <img src="img/music.png" alt="" className="Iuno"></img>
                                     <div className="descripcion">
                                         <p className="smalltittle">Produccion musica</p>
                                         <p className="smalldescription">Grabacion, edicion y composicion</p>
                                     </div>   
-                            </Link>
-                            </Router>
-                        </div> */}
+                        </div>
                     </div>
                     <div className="work">
                         <div className="thumb">

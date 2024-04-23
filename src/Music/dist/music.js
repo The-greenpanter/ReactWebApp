@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var react_1 = require("react");
-require("practicadospuntocero.css");
+require("./practicadospuntocero.css");
 var music = function () {
     return (react_1["default"].createElement("div", { className: "contenedor" },
         react_1["default"].createElement("header", null,
@@ -17,7 +17,7 @@ var music = function () {
                         react_1["default"].createElement("a", { href: "#" }, "Contactos"))))),
         react_1["default"].createElement("section", { className: "main" },
             react_1["default"].createElement("div", null,
-                react_1["default"].createElement("img", { className: "IMG", src: "/Music/IMG_21620467086121.jpeg", alt: "", width: "1080", heigt: "720" })),
+                react_1["default"].createElement("img", { className: "IMG", src: "/Music/IMG_21620467086121.jpeg", alt: "", width: "1080" })),
             react_1["default"].createElement("section", { className: "post" },
                 react_1["default"].createElement("article", null,
                     react_1["default"].createElement("h2", null, "Titulo del Articulo"),

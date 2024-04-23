@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family:"FuzzyBubbles-Bold" ;
     src: url('/Disenho web/html/Fuentes/Fonts/Fuzzy_Bubbles/FuzzyBubbles-Bold.ttf');
 }
@@ -32,7 +32,7 @@
 @font-face {
     font-family:"RobotoMono-VariableFont_wght" ;
     src: url('/Disenho web/html/Fuentes/Fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf');
-}
+} */
 *{
     margin: 0;
     padding: 0;

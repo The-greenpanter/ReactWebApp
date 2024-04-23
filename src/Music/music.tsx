@@ -1,5 +1,5 @@
 import React from 'react'
-import 'practicadospuntocero.css'
+import './practicadospuntocero.css'
 
 const music = () => {
   return (
@@ -16,7 +16,7 @@ const music = () => {
     </header>
     <section className="main">
         <div>
-            <img className ="IMG" src="/Music/IMG_21620467086121.jpeg" alt="" width="1080" heigt="720" />
+            <img className ="IMG" src="/Music/IMG_21620467086121.jpeg" alt="" width="1080" />
         </div>
         <section className="post">
             <article>
