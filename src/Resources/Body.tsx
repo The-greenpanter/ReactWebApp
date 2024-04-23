@@ -1,16 +1,5 @@
 import React from 'react'
-import {
-    createBrowserRouter,
-    RouterProvider,
-  } from "react-router-dom";
-  import Music from '../Music/music.tsx'
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Music/>,
-    },
-  ]);
 const Body = () => {
   return (
     <section className="main">
@@ -32,7 +21,7 @@ const Body = () => {
                 </h3>     
                 <div className="trabanos">
                     <div className="work">
-                        <div className="thumb">
+                        {/* <div className="thumb">
                         <Router>
                                 <Routes>
                                 <Route path="../Music/" element={<Music/>} />
@@ -45,7 +34,7 @@ const Body = () => {
                                     </div>   
                             </Link>
                             </Router>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="work">
                         <div className="thumb">
