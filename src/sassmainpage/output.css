@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  background: url("../img/headerIMG.jpg") #415AA6;
+  background: url("../img/PSX_20220329_121908.jpg") #415AA6;
   background-repeat: no-repeat;
   background-size: center;
   background-position: center;
@@ -195,6 +195,8 @@ footer .contacto .container .formulario {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  .InsertNombre-margin-right: 1px;
+  .InsertCorreo-margin-left: 1px;
 }
 footer .contacto .container .formulario .InsertNombre,
 footer .contacto .container .formulario .InsertCorreo {
@@ -206,7 +208,6 @@ footer .contacto .container .formulario .InsertCorreo {
   height: 3em;
   text-align: justify;
   display: space-between;
-  margin-left: 1px;
   border: 2px solid #373CA6;
   border-radius: 5px;
   align-content: center;
