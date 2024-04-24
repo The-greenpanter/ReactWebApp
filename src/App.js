@@ -1,16 +1,18 @@
-import './App.css';
 import Header from './Resources/Header';
 import Body from './Resources/Body.tsx';
 import Footrt from "./Resources/Footrt.tsx";
 import './sassmainpage/output.css'
 import FinalSection from './Resources/finalSection.js';
+// import "./js/jqueryD-3.6.1.js"
+// import "./js/jquery-3.6.1.min.js"
+// import "./js/efectos.js"
 
 
 function App() {
   return (
   <><Header /><Body />
-  <Footrt  /* other props */ />
-  {/* <FinalSection />   */}
+  <Footrt />
+  <FinalSection />  
    </>
   );
 }
