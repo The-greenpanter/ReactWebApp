@@ -1,8 +1,8 @@
-import Header from './Resources/Header';
+import Header from './Resources/Header.js';
 import Body from './Resources/Body.tsx';
 import Footrt from "./Resources/Footrt.tsx";
-import './sassmainpage/output.css'
 import FinalSection from './Resources/finalSection.js';
+import React from 'react';
 // import "./js/jqueryD-3.6.1.js"
 // import "./js/jquery-3.6.1.min.js"
 // import "./js/efectos.js"
@@ -10,7 +10,8 @@ import FinalSection from './Resources/finalSection.js';
 
 function App() {
   return (
-  <><Header /><Body />
+  <><Header/>
+  <Body/>
   <Footrt />
   <FinalSection />  
    </>
