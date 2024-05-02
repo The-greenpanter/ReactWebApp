@@ -51,6 +51,7 @@ var react_1 = require("react");
 var prop_types_1 = require("prop-types");
 var finalSection_1 = require("./finalSection");
 var react_hook_form_1 = require("react-hook-form");
+var output_module_css_1 = require("../Estilos/output.module.css");
 var zod_1 = require("zod");
 var zod_2 = require("@hookform/resolvers/zod");
 var schema = zod_1.z.object({
@@ -83,17 +84,17 @@ var Footrt = function () {
         });
     }); };
     return (react_1["default"].createElement("footer", null,
-        react_1["default"].createElement("section", { className: "contacto" },
-            react_1["default"].createElement("div", { className: "container" },
-                react_1["default"].createElement("h3", { className: "titulo", id: "contacto" }, "Contact"),
-                react_1["default"].createElement("form", { className: "formulario", onSubmit: handleSubmit(onSubmit) },
-                    react_1["default"].createElement("input", __assign({ className: "InsertNombre", type: "text", placeholder: "Name" }, register("name"))),
-                    errors.name && (react_1["default"].createElement("div", { className: "error-message" }, errors.name.message)),
-                    react_1["default"].createElement("input", __assign({ className: "InsertCorreo", type: "email", placeholder: "Email" }, register("email"))),
-                    errors.email && (react_1["default"].createElement("div", { className: "error-message" }, errors.email.message)),
+        react_1["default"].createElement("section", { className: output_module_css_1["default"].contacto },
+            react_1["default"].createElement("div", { className: output_module_css_1["default"].container },
+                react_1["default"].createElement("h3", { className: output_module_css_1["default"].titulo, id: "contacto" }, "Contact"),
+                react_1["default"].createElement("form", { className: output_module_css_1["default"].formulario, onSubmit: handleSubmit(onSubmit) },
+                    react_1["default"].createElement("input", __assign({ className: output_module_css_1["default"].InsertNombre, type: "text", placeholder: "Name" }, register("name"))),
+                    errors.name && (react_1["default"].createElement("div", { className: output_module_css_1["default"]["error-message"] }, errors.name.message)),
+                    react_1["default"].createElement("input", __assign({ className: output_module_css_1["default"].InsertCorreo, type: "email", placeholder: "Email" }, register("email"))),
+                    errors.email && (react_1["default"].createElement("div", { className: output_module_css_1["default"]["error-message"] }, errors.email.message)),
                     react_1["default"].createElement("textarea", __assign({ placeholder: "Message" }, register("mensaje"))),
-                    errors.mensaje && (react_1["default"].createElement("div", { className: "error-message" }, errors.mensaje.message)),
-                    react_1["default"].createElement("input", { className: "boton", type: "submit", value: "Send" }))),
+                    errors.mensaje && (react_1["default"].createElement("div", { className: output_module_css_1["default"]["error-message"] }, errors.mensaje.message)),
+                    react_1["default"].createElement("input", { className: output_module_css_1["default"].boton, type: "submit", value: "Send" }))),
             react_1["default"].createElement(finalSection_1["default"], null))));
 };
 Footrt.protoTypes = {

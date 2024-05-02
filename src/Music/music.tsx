@@ -1,10 +1,10 @@
 import React from 'react'
-import Stylesmusic from "../Estilos/practicadospuntocero.css"
+import Stylesmusic from "../Estilos/practicadospuntocero.module.css"
 
 const music = () => {
   return (
     <div className={Stylesmusic.contenedor}>
-    <header>
+    <header className={Stylesmusic.header}>
         <nav>
             <ul>
                 <li><a href="../index.html" >Inicio</a></li>

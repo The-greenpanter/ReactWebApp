@@ -1,5 +1,5 @@
 import React from 'react'
-import Mainsytle from "../Estilos/output.css"
+import Mainsytle from "../Estilos/output.module.css"
 
 const Body = () => {
   return (

@@ -2,6 +2,7 @@ import React  from 'react'
 import PropTypes from 'prop-types';
 import FinalSection from './finalSection';
 import {useForm, SubmitHandler} from "react-hook-form";
+import Mainsytle from "../Estilos/output.module.css"
 import {z} from "zod";
 import { zodResolver } from '@hookform/resolvers/zod';
 
@@ -33,23 +34,23 @@ const Footrt = () => {
 
 return (
   <footer>
-    <section className="contacto">
-          <div className="container">
-            <h3 className="titulo" id="contacto">Contact</h3>
-            <form className="formulario" onSubmit={handleSubmit(onSubmit)}>
-              <input className="InsertNombre" type="text" placeholder="Name" {...register("name")} />
+    <section className={Mainsytle.contacto}>
+          <div className={Mainsytle.container}>
+            <h3 className={Mainsytle.titulo} id="contacto">Contact</h3>
+            <form className={Mainsytle.formulario} onSubmit={handleSubmit(onSubmit)}>
+              <input className={Mainsytle.InsertNombre} type="text" placeholder="Name" {...register("name")} />
               {errors.name && (
-                    <div className="error-message">{errors.name.message}</div>
+                    <div className={Mainsytle["error-message"]}>{errors.name.message}</div>
                   )}
-              <input className="InsertCorreo" type="email" placeholder="Email" {...register("email")} />
+              <input className={Mainsytle.InsertCorreo} type="email" placeholder="Email" {...register("email")} />
                   {errors.email && (
-                    <div className="error-message">{errors.email.message}</div>
+                    <div className={Mainsytle["error-message"]}>{errors.email.message}</div>
                   )}
               <textarea placeholder="Message"  {...register("mensaje")}/>
               {errors.mensaje && (
-                    <div className="error-message">{errors.mensaje.message}</div>
+                    <div className={Mainsytle["error-message"]}>{errors.mensaje.message}</div>
                   )}
-              <input className="boton" type="submit" value="Send" />
+              <input className={Mainsytle.boton} type="submit" value="Send" />
             </form>
           </div>
         <FinalSection/> 

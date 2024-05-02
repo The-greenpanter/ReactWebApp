@@ -1,4 +1,4 @@
-import Header from './Resources/Header.js';
+import Header from './Resources/Header.tsx';
 import Body from './Resources/Body.tsx';
 import Footrt from "./Resources/Footrt.tsx";
 import FinalSection from './Resources/finalSection.js';

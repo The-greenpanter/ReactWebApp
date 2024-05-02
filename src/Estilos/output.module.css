@@ -18,7 +18,7 @@ body {
   text-align: center;
 }
 
-header {
+header .encabezado{
   background: url("../img/PSX_20220329_121908.jpg") #415AA6;
   background-repeat: no-repeat;
   background-size: center;
