@@ -33,16 +33,8 @@
     font-family:"RobotoMono-VariableFont_wght" ;
     src: url('/Disenho web/html/Fuentes/Fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf');
 } */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    
-}
 
-body{
+.general {
     font-family:RobotoMono-VariableFont_wght;
     font-size: 16px;
     background: #0593A2;
@@ -59,11 +51,11 @@ header .header{
 
 }
 
-header nav{
+header nav .menu{
     width: 100%;
 }
 
-header nav ul{
+header nav ul .links{
     width: 100%;
     overflow:hidden;
     list-style: none;
