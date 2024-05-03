@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import Music from "./Music/music.tsx";
+import "./Estilos/generalStyles.css"
 import {
   createBrowserRouter,
   RouterProvider,
