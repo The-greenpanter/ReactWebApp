@@ -8,12 +8,12 @@
 
 .encabezado .Radio{
   margin:0;
-  padding: 0;
+  padding: 0;  
 }
 
 .encabezado .Radio .iframe {
   width: 100%;
-  height: 14em;
+  height: 250px;
 }
 
 .conteiner{
