@@ -49,6 +49,7 @@ header .titlecontainer {
   text-align: center;
   padding: 20px 60px;
   justify-content: center;
+}
 header .titlecontainer .texto {
   padding: 0 50px;
   border: 2.5px solid #fff;
