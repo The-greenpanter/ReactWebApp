@@ -49,7 +49,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 exports.__esModule = true;
 var react_1 = require("react");
 var prop_types_1 = require("prop-types");
-var finalSection_1 = require("./finalSection");
+var finalSection_tsx_1 = require("./finalSection.tsx");
 var react_hook_form_1 = require("react-hook-form");
 var output_module_css_1 = require("../Estilos/output.module.css");
 var zod_1 = require("zod");
@@ -83,7 +83,7 @@ var Footrt = function () {
             }
         });
     }); };
-    return (react_1["default"].createElement("footer", null,
+    return (react_1["default"].createElement("footer", { className: output_module_css_1["default"].footer },
         react_1["default"].createElement("section", { className: output_module_css_1["default"].contacto },
             react_1["default"].createElement("div", { className: output_module_css_1["default"].container },
                 react_1["default"].createElement("h3", { className: output_module_css_1["default"].titulo, id: "contacto" }, "Contact"),
@@ -95,7 +95,7 @@ var Footrt = function () {
                     react_1["default"].createElement("textarea", __assign({ placeholder: "Message" }, register("mensaje"))),
                     errors.mensaje && (react_1["default"].createElement("div", { className: output_module_css_1["default"]["error-message"] }, errors.mensaje.message)),
                     react_1["default"].createElement("input", { className: output_module_css_1["default"].boton, type: "submit", value: "Send" }))),
-            react_1["default"].createElement(finalSection_1["default"], null))));
+            react_1["default"].createElement(finalSection_tsx_1["default"], null))));
 };
 Footrt.protoTypes = {
     initialValues: prop_types_1["default"].shape({

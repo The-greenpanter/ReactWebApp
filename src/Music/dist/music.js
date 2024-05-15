@@ -45,7 +45,7 @@ var music = function () {
                 react_1["default"].createElement("div", { className: practicadospuntocero_module_css_1["default"].weidget },
                     react_1["default"].createElement("h3", { className: practicadospuntocero_module_css_1["default"].titulo }, "Informacion"),
                     react_1["default"].createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae tempore eveniet esse non, sed pariatur quas quae aspernatur ad quasi laudantium voluptatum sunt accusamus nam dolor ex distinctio sequi."))),
-            react_1["default"].createElement("footer", null,
+            react_1["default"].createElement("footer", { className: practicadospuntocero_module_css_1["default"].mfooter },
                 react_1["default"].createElement("p", null, "The Green Panther productions - Copy right protected")))));
 };
 exports["default"] = music;

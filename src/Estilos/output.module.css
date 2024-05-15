@@ -181,14 +181,18 @@ header .titlecontainer .texto .descripcion {
   font-size: 14px;
 }
 
-footer .contacto {
+.footer {
+  width: 100%;
+}
+
+.footer .contacto {
   padding: 20px 0;
 }
-footer .contacto .container {
+.footer .contacto .container {
   margin: 10px auto;
   justify-content: center;
 }
-footer .contacto .container .titulo {
+.footer .contacto .container .titulo {
   justify-content: center;
   font-size: 34px;
   line-height: 24px;
@@ -197,15 +201,15 @@ footer .contacto .container .titulo {
   color: #F27507;
   text-align: left;
 }
-footer .contacto .container .formulario {
+.footer .contacto .container .formulario {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   .InsertNombre-margin-right: 1px;
   .InsertCorreo-margin-left: 1px;
 }
-footer .contacto .container .formulario .InsertNombre,
-footer .contacto .container .formulario .InsertCorreo {
+.footer .contacto .container .formulario .InsertNombre,
+.footer .contacto .container .formulario .InsertCorreo {
   font-size: 1em;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -219,18 +223,18 @@ footer .contacto .container .formulario .InsertCorreo {
   align-content: center;
   flex: auto;
 }
-footer .contacto .container .formulario .InsertNombre:focus,
-footer .contacto .container .formulario .InsertCorreo:focus {
+.footer .contacto .container .formulario .InsertNombre:focus,
+.footer .contacto .container .formulario .InsertCorreo:focus {
   border: 2px solid #F27507;
 }
-footer .contacto .container .formulario .error-message {
+.footer .contacto .container .formulario .error-message {
   color: #f20707;
   width: 47%;
   height: 3em;
   width: 100%;
   text-align: left;
 }
-footer .contacto .container .formulario textarea {
+.footer .contacto .container .formulario textarea {
   border: 2px solid #373CA6;
   border-radius: 5px;
   padding: 15px 20px;
@@ -244,10 +248,10 @@ footer .contacto .container .formulario textarea {
   max-height: 300px;
   margin-bottom: 15px;
 }
-footer .contacto .container .formulario textarea:focus {
+.footer .contacto .container .formulario textarea:focus {
   border: 2px solid #F27507;
 }
-footer .contacto .container .formulario .boton {
+.footer .contacto .container .formulario .boton {
   margin: auto;
   background: #3895ea;
   color: #fff;
@@ -255,46 +259,46 @@ footer .contacto .container .formulario .boton {
   border-radius: 5px;
   padding: 15px 40px;
 }
-footer .contacto .container .formulario .boton:hover {
+.footer .contacto .container .formulario .boton:hover {
   background: #415AA6;
 }
-footer .social-media {
+.footer .social-media {
   background-color: #415AA6;
   padding: 60px 0;
   flex-direction: row;
   text-align: center;
 }
-footer .social-media a {
+.footer .social-media a .Linkin,
+.footer .social-media a .GitHub,
+.footer .social-media a i
+.footer .social-media a .IG {
   color: #fff;
   text-align: center;
   width: 100px;
   display: block;
-  padding: 15px 10px;
+  padding: 15px 5px;
   border-radius: 30px;
-  font-size: 30px;
-  margin: 0 20px;
+  font-size: 20px;
+  margin: 0 70px;
   display: inline;
 }
-footer .social-media a:hover {
+.footer .social-media a:hover {
   color: white;
   padding: 15px 10px;
   margin: 0 20px;
   border-radius: 100%;
 }
-footer .social-media .IG:hover {
+.footer .social-media .IG:hover {
   background-image: linear-gradient(to left, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
 }
-footer .social-media .FB:hover {
-  background: #1877f2;
-}
-footer .social-media .GitHub:hover {
+.footer .social-media .GitHub:hover {
   background: #6cc644;
 }
-footer .social-media .Linkin:hover {
+.footer .social-media .Linkin:hover {
   background: #0077b5;
 }
-footer .Radio,
-footer .Radio iframe {
+.footer .Radio,
+.footer .Radio iframe {
   width: 100%;
 }
 
@@ -312,8 +316,8 @@ header .container .titlecontainer h2 {
   font-size: 18px;
 }
 
-footer .social-media .container,
-footer .social-media .container i {
+.footer .social-media .container,
+.footer .social-media .container i {
   padding: 19.3px 9.6px;
 }
 

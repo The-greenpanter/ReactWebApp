@@ -52,7 +52,7 @@ const music = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vitae tempore eveniet esse non, sed pariatur quas quae aspernatur ad quasi laudantium voluptatum sunt accusamus nam dolor ex distinctio sequi.</p>        
         </div>
     </aside>
-    <footer>
+    <footer className={Stylesmusic.mfooter}>
         <p>The Green Panther productions - Copy right protected</p>
     </footer>
     </div>

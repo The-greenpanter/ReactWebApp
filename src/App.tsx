@@ -13,8 +13,7 @@ function App() {
   return (
   <><Header/>
   <Body/>
-  <Footrt />
-  <FinalSection />  
+  <Footrt /> 
    </>
   );
 }

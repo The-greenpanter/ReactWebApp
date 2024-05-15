@@ -1,6 +1,6 @@
 import React  from 'react'
 import PropTypes from 'prop-types';
-import FinalSection from './finalSection';
+import FinalSection from './finalSection.tsx';
 import {useForm, SubmitHandler} from "react-hook-form";
 import Mainsytle from "../Estilos/output.module.css"
 import {z} from "zod";
@@ -33,7 +33,7 @@ const Footrt = () => {
   };
 
 return (
-  <footer>
+  <footer className={Mainsytle.footer}>
     <section className={Mainsytle.contacto}>
           <div className={Mainsytle.container}>
             <h3 className={Mainsytle.titulo} id="contacto">Contact</h3>
