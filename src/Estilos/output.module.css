@@ -183,17 +183,20 @@ header .titlecontainer .texto .descripcion {
 
 .footer {
   width: 100%;
+  background-color:#FFFF ;
 }
 
 .footer .contacto {
   padding: 20px 0;
 }
 .footer .contacto .container {
-  margin: 10px auto;
+  margin: 20px 10px;
   justify-content: center;
+  
 }
 .footer .contacto .container .titulo {
   justify-content: center;
+  margin-left: 1%;
   font-size: 34px;
   line-height: 24px;
   margin-bottom: 40px;
@@ -205,8 +208,14 @@ header .titlecontainer .texto .descripcion {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  .InsertNombre-margin-right: 1px;
-  .InsertCorreo-margin-left: 1px;
+  
+}
+.footer .contacto .container .formulario .InsertNombre {
+  margin-right: 5px;
+}
+
+.footer .contacto .container .formulario.InsertCorreo {
+  margin-left: 5px;
 }
 .footer .contacto .container .formulario .InsertNombre,
 .footer .contacto .container .formulario .InsertCorreo {
@@ -225,11 +234,11 @@ header .titlecontainer .texto .descripcion {
 }
 .footer .contacto .container .formulario .InsertNombre:focus,
 .footer .contacto .container .formulario .InsertCorreo:focus {
-  border: 2px solid #F27507;
+  border: 1% solid #F27507;
 }
 .footer .contacto .container .formulario .error-message {
   color: #f20707;
-  width: 47%;
+  width: auto;
   height: 3em;
   width: 100%;
   text-align: left;
@@ -249,7 +258,7 @@ header .titlecontainer .texto .descripcion {
   margin-bottom: 15px;
 }
 .footer .contacto .container .formulario textarea:focus {
-  border: 2px solid #F27507;
+  border: 50% solid #F27507;
 }
 .footer .contacto .container .formulario .boton {
   margin: auto;
@@ -267,20 +276,26 @@ header .titlecontainer .texto .descripcion {
   padding: 60px 0;
   flex-direction: row;
   text-align: center;
+  display: flex;
+ 
 }
-.footer .social-media a .Linkin,
-.footer .social-media a .GitHub,
-.footer .social-media a i
-.footer .social-media a .IG {
-  color: #fff;
+.footer .social-media .container {
+  flex: 1;
+}
+.footer .social-media a {
+  color: #ffff;
   text-align: center;
   width: 100px;
   display: block;
   padding: 15px 5px;
   border-radius: 30px;
-  font-size: 20px;
+  /* font-size: 20px; */
   margin: 0 70px;
   display: inline;
+}
+.footer .social-media a {
+
+
 }
 .footer .social-media a:hover {
   color: white;

@@ -9,9 +9,9 @@ const Header = () => {
     </section>
         <div className={Mainsytle.conteiner}>
             <nav className={Mainsytle.menu}>
-                {/* <a id="btn-acerca-de" className={Mainsytle.acercade}>Acerca de</a>
+                <a id="btn-acerca-de" className={Mainsytle.acercade}>Acerca de</a>
                 <a id="btn-Trabajos" className={Mainsytle.Diseños}>Diseños</a>
-                <a id="btn-contacto" className={Mainsytle.contacto}>Contacto</a>  */}
+                <a id="btn-contacto" className={Mainsytle.contacto}>Contacto</a> 
             </nav>
             <div className={Mainsytle.titlecontainer} id="">
                 <div className={Mainsytle.texto}>
