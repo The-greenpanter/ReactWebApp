@@ -283,32 +283,64 @@ header .titlecontainer .texto .descripcion {
 .footer .social-media .container {
   flex: 1;
 }
+.footer .social-media {
+  background-color: #415AA6;
+  padding: 60px 0;
+  flex-direction: row;
+  text-align: center;
+}
 .footer .social-media a {
-  color: #ffff;
+  color: #fff;
   text-align: center;
   width: 100px;
   display: block;
-  padding: 15px 5px;
+  padding: 15px 10px;
   border-radius: 30px;
-  /* font-size: 20px; */
-  margin: 0 70px;
+  font-size: 30px;
+  margin: 0 20px;
   display: inline;
 }
-.footer .social-media a:hover {
-  color: white;
+.footer .social-media .IG {
+  text-align: justify;
+}
+.footer .social-media .IG:hover {
+  text-align: justify;
+  background-image:linear-gradient(to left, #405de6, #5851db,#833ab4,#c13584,#e1306c,#fd1d1d,#f56040,#f77737,#fcaf45,#ffdc80);
   padding: 15px 10px;
   margin: 0 20px;
   border-radius: 100%;
 }
-.footer .social-media .IG:hover {
-  background-image: linear-gradient(to left, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
+.footer .social-media .FB:hover {
+  padding: 15px 10px;
+  background: #1877f2;
+  margin: 0 20px;
+  border-radius: 100%;
 }
 .footer .social-media .GitHub:hover {
+  padding: 15px 10px;
   background: #6cc644;
+  margin: 0 20pxb;
+  border-radius: 100%;
 }
 .footer .social-media .Linkin:hover {
+  padding: 15px 10px;
   background: #0077b5;
+  margin: 0 20px;
+  border-radius: 100%;
 }
+.footer .social-media i .IG {
+  background: #fff;
+}
+.footer .social-media i .FB {
+  background: #fff;
+}
+.footer .social-media i .GitHub {
+  background: #fff;
+}
+.footer .social-media i .Linkin {
+  background: #fff;
+}
+
 .footer .Radio,
 .footer .Radio iframe {
   width: 100%;
