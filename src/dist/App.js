@@ -4,8 +4,8 @@ var Header_tsx_1 = require("./Resources/Header.tsx");
 var Body_tsx_1 = require("./Resources/Body.tsx");
 var Footrt_tsx_1 = require("./Resources/Footrt.tsx");
 var react_1 = require("react");
-require("./js/jqueryD-3.6.1.js");
-require("./js/jquery-3.6.1.min.js");
+// import "./js/jqueryD-3.6.1.js"
+// import "./js/jquery-3.6.1.min.js"
 require("./js/efectos.js");
 function App() {
     return (react_1["default"].createElement(react_1["default"].Fragment, null,

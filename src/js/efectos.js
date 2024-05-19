@@ -1,3 +1,8 @@
+import React, { useEffect } from 'react';
+import $ from 'jquery';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Music from '../Music/music.tsx';
+
 $(document).ready(function(){
     //Efecto menu
     $('.menu a').each(function(index,elemento){
