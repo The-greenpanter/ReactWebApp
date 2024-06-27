@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
-import Music from "./Music/music.tsx";
 import "./Estilos/generalStyles.css"
 import {
   createBrowserRouter,
@@ -14,10 +13,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element:  <App />,
-  },
-  {
-    path: "/Music",
-    element: <Music />,
   }
 ]);
 
@@ -25,9 +20,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 // const root =  ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-    </React.StrictMode>  
+  
+    <RouterProvider router={router} />  
 );
 
 

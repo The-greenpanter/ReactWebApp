@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Music from '../Music/music.tsx';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
@@ -58,7 +57,7 @@ const Body = () => {
     return (
         <Router>
             <Routes>
-                <Route path="/music" element={<Music />} />
+                <Route path="/app" element={<body />} />
             </Routes>
             <div className="trabanos">
                 <div className="work">
