@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <header className={Mainsytle.encabezado}>
             <section className={Mainsytle.Radio}>
-                <iframe className={Mainsytle.iframe} src="https://zeno.fm/player/chispero-records" frameborder="0" scrolling="no"></iframe><a href="https://zeno.fm/" target="_blank" style={{ fontSize: '0.9em', lineHeight: '10px' }}></a>
+                <iframe className={Mainsytle.iframe} src="https://zeno.fm/player/chispero-records" frameBorder="0" scrolling="no"></iframe><a href="https://zeno.fm/" target="_blank" style={{ fontSize: '0.9em', lineHeight: '10px' }}></a>
             </section>
             <div className={Mainsytle.conteiner}>
                 <nav className={Mainsytle.menu}>
