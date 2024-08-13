@@ -1,4 +1,3 @@
-import React  from 'react'
 import PropTypes from 'prop-types';
 import FinalSection from './finalSection.tsx';
 import {useForm, SubmitHandler} from "react-hook-form";

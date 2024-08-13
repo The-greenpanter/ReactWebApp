@@ -1,4 +1,3 @@
-import React from 'react'
 import Mainsytle from "../Estilos/output.module.css"
 
 const Body = () => {
