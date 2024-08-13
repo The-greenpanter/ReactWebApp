@@ -1,0 +1,368 @@
+// styles.scss
+@import 'reset'
+
+$body-font: Arial, sans-serif
+$primary-color: rgba(255, 255, 255, 0.6)
+$container-width: 90%
+$max-container-width: 1000px
+$header-bg: url("../img/PSX_20220329_121908.jpg") #415AA6
+$text-color: #fff
+$border-color: #373CA6
+
+body
+  background: $primary-color
+  font-family: $body-font
+  font-size: 16px
+
+
+.container 
+  width: $container-width
+  max-width: $max-container-width
+  margin: auto
+  overflow: visible
+  text-align: center
+
+
+header 
+  background: $header-bg
+  background-repeat: no-repeat
+  background-size: center
+  background-position: center
+  overflow: hidden
+
+  .menu 
+    margin: 20px auto
+    text-align: right
+
+    a 
+      margin: 0 20px
+      color: $text-color
+      padding-bottom: 9px
+      display: inline-block
+      text-decoration: none
+      border-bottom: 2px solid transparent
+      font-size: 1em
+
+      &:hover 
+        border-bottom: 2px solid $text-color
+      
+    
+  
+
+  .titlecontainer 
+    display: flex
+    margin-top: 50px
+    margin-bottom: 100px
+    text-align: center
+    padding: 30px 60px
+    justify-content: center
+
+    .texto 
+      padding: 0 50px
+      border: 2.5px solid $text-color
+      border-radius: 9px
+      display: inline-block
+      justify-items: space-between
+      text-align: center
+      padding: 20px 15px
+      align-content: center
+
+      h1 
+        color: $text-color
+        font-family: "Petit Formal Script", cursive
+        font-size: 50px
+      
+
+      h2 
+        color: #000
+        font-family: "Vollkorn"
+        font-size: 60px
+        padding-top: 9px
+        border-top: 2px solid #000
+      
+
+      .Tituloprincipal 
+        margin-bottom: 10px
+        font-size: 50px
+        line-height: 50px
+      
+
+      .descripcion 
+        font-size: 30px
+      
+    
+  
+
+
+.main 
+  .Acercade 
+    text-align: center
+    display: flex
+
+    .container 
+      .IMGportada 
+        margin-top: -70px
+        align-items: center
+
+        img 
+          vertical-align: top
+          border-radius: 50%
+          border: 5px solid #F29985
+        
+      
+
+      .generalInfo 
+        color: #F27507
+        font-size: 1.2em
+        text-align: center
+        line-height: 34px
+        text-weight: 200
+        width: 80%
+        margin: 40px auto 40px auto
+
+        .AcercaD 
+          font-size: 34px
+          line-height: 8px
+          margin-bottom: 30px
+          font-weight: 200
+          color: #0D0D0D
+          text-align: center
+        
+
+        .bold 
+          color: #3895ea
+        
+      
+    
+  
+
+  .trabajos 
+    background: #F2E8D5
+    padding: 60px 0
+
+    .titulo 
+      font-size: 34px
+      margin-bottom: 40px
+      font-weight: 200
+      color: #415AA6
+      text-align: center
+    
+
+    .trabanos 
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+
+      .work 
+        width: 33%
+        position: relative
+        order-radius: 5px
+        max-height: 300px
+
+        .thumb 
+          display: inline-block
+          max-height: 100%
+          width: 100%
+          margin-bottom: 40px
+          text-align: center
+
+        
+
+          img 
+            object-fit: cover
+            vertical-align: top
+            max-width: 100%
+            border-radius: 3px
+
+            &:hover 
+              box-shadow: 0 0 4px 2px #415AA6
+            
+          
+
+          p 
+            font-size: 16px
+            color: #000
+            font-family: "Vollkorn", sans-serif
+            font-weight: 400
+          
+
+          .descripcion 
+            text-align: center
+            font-family: "Vollkorn"
+
+            &:hover 
+              text-decoration: underline
+              color: #000100
+            
+
+              .smalltittle 
+                font-weight: 200
+                color: #373CA6
+                margin-bottom: 10px
+              
+
+              .smalldescription 
+                font-size: 14px
+              
+            
+          
+        
+      
+    
+  
+
+
+footer 
+  .contacto 
+    padding: 20px 0
+
+    .container 
+      margin: 10px auto
+      justify-content: center
+
+      .titulo 
+        justify-content: center
+        font-size: 34px
+        line-height: 24px
+        margin-bottom: 40px
+        margin-top: 0
+        color: #F27507
+        text-align: left
+      
+
+      .formulario 
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+        .InsertNombre:
+         margin-right: 1px
+        .InsertCorreo:
+         margin-left: 1px
+        .InsertNombre,
+        .InsertCorreo 
+          font-size: 1em
+          margin-bottom: 10px
+          margin-top: 10px
+          color: #F27507
+          width: 47%
+          height: 3em
+          text-align: justify
+          display: space-between
+          border: 2px solid $border-color
+          border-radius: 5px
+          align-content: center
+          flex: auto
+
+          &:focus 
+            border: 2px solid #F27507
+        .error-message
+          color: #f20707
+          width: 47%
+          height: 3em
+          width: 100%
+          text-align: left
+
+
+        textarea 
+          border: 2px solid $border-color
+          border-radius: 5px
+          padding: 15px 20px
+          font-size: 20px
+          color: $border-color
+          width: 100%
+          height: 100px
+          min-width: 100%
+          max-width: 100%
+          min-height: 100px
+          max-height: 300px
+          margin-bottom: 15px
+
+          &:focus 
+            border: 2px solid #F27507
+          
+        
+
+        .boton 
+          margin: auto
+          background: #3895ea
+          color: #fff
+          border: none
+          border-radius: 5px
+          padding: 15px 40px
+
+          &:hover 
+            background: #415AA6
+          
+        
+      
+    
+  
+
+  .social-media 
+    background-color: #415AA6
+    padding: 60px 0
+    flex-direction: row
+    text-align: center
+
+    a 
+      color: #fff
+      text-align: center
+      width: 100px
+      display: block
+      padding: 15px 10px
+      border-radius: 30px
+      font-size: 30px
+      margin: 0 20px
+      display: inline
+
+      &:hover 
+        color: #ffff
+        padding: 15px 10px
+        margin: 0 20px
+        border-radius: 100%
+      
+    
+
+    .IG:hover 
+      background-image: linear-gradient(to left, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80)
+    
+
+    .FB:hover 
+      background: #1877f2
+    
+
+    .GitHub:hover 
+      background: #6cc644
+    
+
+    .Linkin:hover 
+      background: #0077b5
+    
+  
+
+  .Radio,
+  .Radio iframe
+    width:100%
+  
+
+
+.main .trabajos .container .trabanos .work 
+  width: 26%
+
+
+header .container .titlecontainer .Tituloprincipal,
+header .container .titlecontainer h1 
+  font-size: 35px
+
+
+header .container .titlecontainer .descripcion,
+header .container .titlecontainer h2 
+  font-size: 18px
+
+
+footer .social-media .container,
+footer .social-media .container i 
+  padding: 19.3px 9.6px
+
