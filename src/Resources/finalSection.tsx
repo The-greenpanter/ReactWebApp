@@ -1,6 +1,6 @@
 import React from 'react'
 import Mainsytle from "../Estilos/output.module.css"
-
+import "@fortawesome/fontawesome-free"
 const finalSection = () => {
   return (
 <section className={Mainsytle["social-media"]}>
