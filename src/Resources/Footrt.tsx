@@ -51,7 +51,7 @@ return (
                     <div className={Mainsytle["error-message"]}>{errors.mensaje.message}</div>
                   )}
               <input className={Mainsytle.boton} type="submit" value="Send"
-              // `disabled={isSubmitting}` desactiva el botón mientras se está enviando el formulario.
+              //  desactiva el botón mientras se está enviando el formulario.
               disabled={isSubmitting} />
             </form>
           </div>
