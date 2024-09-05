@@ -36,7 +36,8 @@ return (
     <section className={Mainsytle.contacto} >
           <div className={Mainsytle.container}>
             <h3 className={Mainsytle.titulo} id="contacto">Contact</h3>
-            <form className={Mainsytle.formulario} onSubmit={handleSubmit(onSubmit)} netlify>
+            <form className={Mainsytle.formulario} onSubmit={handleSubmit(onSubmit)} method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
               <input className={Mainsytle.InsertNombre} type="text" placeholder="Name" {...register("name")} />
               {errors.name && (
                     <div className={Mainsytle["error-message"]}>{errors.name.message}</div>
@@ -54,9 +55,8 @@ return (
               disabled={isSubmitting} />
             </form>
           </div>
-        <FinalSection/> 
-    </section>  
-   
+        <FinalSection/>
+    </section>
   </footer>
   )
 }
