@@ -1,4 +1,5 @@
-// import Stilosflex from "./flex.module.css";
+import Stilosflex from "./flex.module.css";
+
 const Flex = () => {
     return (
         <div className={Stilosflex.container}>
