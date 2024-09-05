@@ -33,10 +33,10 @@ const Footrt = () => {
 
 return (
   <footer className={Mainsytle.footer}>
-    <section className={Mainsytle.contacto}>
+    <section className={Mainsytle.contacto} >
           {/* <div className={Mainsytle.container}>
             <h3 className={Mainsytle.titulo} id="contacto">Contact</h3>
-            <form className={Mainsytle.formulario} onSubmit={handleSubmit(onSubmit)}>
+            <form className={Mainsytle.formulario} onSubmit={handleSubmit(onSubmit)} netlify>
               <input className={Mainsytle.InsertNombre} type="text" placeholder="Name" {...register("name")} />
               {errors.name && (
                     <div className={Mainsytle["error-message"]}>{errors.name.message}</div>
