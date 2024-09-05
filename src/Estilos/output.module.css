@@ -307,7 +307,7 @@ header .titlecontainer .texto .descripcion {
   text-align: justify;
   background-image:linear-gradient(to left, #405de6, #5851db,#833ab4,#c13584,#e1306c,#fd1d1d,#f56040,#f77737,#fcaf45,#ffdc80);
   /* padding: 15px 10px; */
-  margin: 0 20px;
+  /* margin: 0 20px; */
   border-radius: 100%;
 }
 .footer .social-media .FB:hover {
