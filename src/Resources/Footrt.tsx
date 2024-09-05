@@ -25,7 +25,7 @@ const Footrt = () => {
     resolver: zodResolver(schema),
   });
 
-  const [formState, setFormState] = useState({ name: "", email: "", mensaje: "" });
+
 
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
     try {
