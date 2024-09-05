@@ -34,7 +34,7 @@ const Footrt = () => {
 return (
   <footer className={Mainsytle.footer}>
     <section className={Mainsytle.contacto}>
-          <div className={Mainsytle.container}>
+          {/* <div className={Mainsytle.container}>
             <h3 className={Mainsytle.titulo} id="contacto">Contact</h3>
             <form className={Mainsytle.formulario} onSubmit={handleSubmit(onSubmit)}>
               <input className={Mainsytle.InsertNombre} type="text" placeholder="Name" {...register("name")} />
@@ -53,7 +53,7 @@ return (
               // `disabled={isSubmitting}` desactiva el botón mientras se está enviando el formulario.
               disabled={isSubmitting} />
             </form>
-          </div>
+          </div> */}
         <FinalSection/> 
     </section>  
    
