@@ -1,10 +1,24 @@
 [build]
-  publish = "dist" # O tu carpeta de compilación
+  publish = "dist"  # Cambia esto si tu directorio de salida es diferente.
+  command = "npm run build"  # El comando que construye tu sitio.
+
+[context.production.environment]
+  NODE_VERSION = "16"  # La versión de Node.js que estás utilizando, actualízala según sea necesario.
 
 [[plugins]]
   package = "@netlify/plugin-functions-core"
 
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/contacto"
+  to = "/thank-you"  # La página a la que redirigirá después del envío exitoso del formulario.
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "SAMEORIGIN"
+    Access-Control-Allow-Origin = "*"
