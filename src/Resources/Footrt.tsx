@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Mainsytle from "../Estilos/output.module.css";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { z } from "zod";
@@ -24,7 +23,6 @@ const Footrt = () => {
   const { register, handleSubmit, setError, formState: { errors, isSubmitting } } = useForm<FormFields>({
     resolver: zodResolver(schema),
   });
-
 
 
   const onSubmit: SubmitHandler<FormFields> = async (data) => {

@@ -1,0 +1,10 @@
+[build]
+  publish = "dist" # O tu carpeta de compilación
+
+[[plugins]]
+  package = "@netlify/plugin-functions-core"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
